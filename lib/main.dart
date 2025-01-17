@@ -1,7 +1,10 @@
+// Main file for the FlutterChat app
+//Package imports and Firebase initialization
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 
+// Flutter screen imports
 import 'package:chat_app/screens/auth.dart';
 
 void main() async {
