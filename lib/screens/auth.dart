@@ -54,7 +54,7 @@ class _AuthScreenState extends State<AuthScreen> {
         final userCredentials = await _firebase.createUserWithEmailAndPassword(
             email: _enteredEmail, password: _enteredPassword);
 
-        // ! Not working in firebase_storage:
+        // ! Not working in firebase_storage
         // * Lecture broken at this point
         final storageRef = FirebaseStorage.instance
             .ref()
@@ -64,7 +64,7 @@ class _AuthScreenState extends State<AuthScreen> {
         await storageRef.putFile(_selectedImage!);
         final imageUrl = await storageRef.getDownloadURL();
 
-        // ! Not working in cloud_firestore:
+        // ! Not working in cloud_firestore
         // * Lecture broken at this point
         await FirebaseFirestore.instance
             .collection('users')
