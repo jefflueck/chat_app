@@ -35,13 +35,14 @@ class _AuthScreenState extends State<AuthScreen> {
     if (!isValid || !_isLogin && _selectedImage == null) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
-          content: Text('Please pick an image.'),
+          content: Text('Please complete form.'),
         ),
       );
       return;
     }
 
     _form.currentState!.save();
+
     try {
       setState(() {
         _isAuthenticating = true;
@@ -53,17 +54,17 @@ class _AuthScreenState extends State<AuthScreen> {
         final userCredentials = await _firebase.createUserWithEmailAndPassword(
             email: _enteredEmail, password: _enteredPassword);
 
-        // ! Not working in firebase_storage: ^10.0.1
+        // ! Not working in firebase_storage:
         // * Lecture broken at this point
         final storageRef = FirebaseStorage.instance
             .ref()
-            .child('gs://chat-app-14724.firebasestorage.app/user_images')
+            .child('user_images')
             .child('${userCredentials.user!.uid}.jpg');
 
         await storageRef.putFile(_selectedImage!);
         final imageUrl = await storageRef.getDownloadURL();
 
-        // ! Not working in cloud_firestore: ^2.5.3
+        // ! Not working in cloud_firestore:
         // * Lecture broken at this point
         await FirebaseFirestore.instance
             .collection('users')
@@ -74,6 +75,7 @@ class _AuthScreenState extends State<AuthScreen> {
           'image_url': imageUrl,
         });
       }
+      // * Working code below
     } on FirebaseAuthException catch (error) {
       if (error.code == 'email-already-in-use') {
         // ...
