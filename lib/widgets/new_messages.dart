@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
+// * Stopped coding at lecture 298 due to lecture being outdated and unable to test the app.
 class NewMessages extends StatefulWidget {
   const NewMessages({super.key});
 
