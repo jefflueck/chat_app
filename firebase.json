@@ -1,1 +1,59 @@
-{"hosting":{"public":"public","ignore":["firebase.json","**/.*","**/node_modules/**"]},"flutter":{"platforms":{"android":{"default":{"projectId":"chat-app-14724","appId":"1:304717488484:android:c99a73571cb9eca6b45a71","fileOutput":"android/app/google-services.json"}},"ios":{"default":{"projectId":"chat-app-14724","appId":"1:304717488484:ios:ac511bfbe9406d68b45a71","uploadDebugSymbols":false,"fileOutput":"ios/Runner/GoogleService-Info.plist"}},"macos":{"default":{"projectId":"chat-app-14724","appId":"1:304717488484:ios:ac511bfbe9406d68b45a71","uploadDebugSymbols":false,"fileOutput":"macos/Runner/GoogleService-Info.plist"}},"dart":{"lib/firebase_options.dart":{"projectId":"chat-app-14724","configurations":{"android":"1:304717488484:android:c99a73571cb9eca6b45a71","ios":"1:304717488484:ios:ac511bfbe9406d68b45a71"}}}}}}
+{
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  },
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "chat-app-14724",
+          "appId": "1:304717488484:android:c99a73571cb9eca6b45a71",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "ios": {
+        "default": {
+          "projectId": "chat-app-14724",
+          "appId": "1:304717488484:ios:ac511bfbe9406d68b45a71",
+          "uploadDebugSymbols": false,
+          "fileOutput": "ios/Runner/GoogleService-Info.plist"
+        }
+      },
+      "macos": {
+        "default": {
+          "projectId": "chat-app-14724",
+          "appId": "1:304717488484:ios:ac511bfbe9406d68b45a71",
+          "uploadDebugSymbols": false,
+          "fileOutput": "macos/Runner/GoogleService-Info.plist"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "chat-app-14724",
+          "configurations": {
+            "android": "1:304717488484:android:c99a73571cb9eca6b45a71",
+            "ios": "1:304717488484:ios:ac511bfbe9406d68b45a71"
+          }
+        }
+      }
+    }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ]
+    }
+  ]
+}

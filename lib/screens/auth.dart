@@ -8,7 +8,6 @@ import 'dart:io';
 // Files needed for the widget
 import 'package:chat_app/widgets/user_image_picker.dart';
 
-// * Stopped coding at lecture 298 due to lecture being outdated and unable to test the app.
 final _firebase = FirebaseAuth.instance;
 
 class AuthScreen extends StatefulWidget {

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'dart:io';
 
-// * Stopped coding at lecture 298 due to lecture being outdated and unable to test the app.
 class UserImagePicker extends StatefulWidget {
   const UserImagePicker({
     super.key,

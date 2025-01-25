@@ -4,7 +4,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
-// * Stopped coding at lecture 298 due to lecture being outdated and unable to test the app.
 class ChatMessages extends StatelessWidget {
   const ChatMessages({super.key});
 

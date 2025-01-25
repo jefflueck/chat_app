@@ -14,12 +14,8 @@ import 'package:chat_app/screens/splash.dart';
 // * At this time the other features that are not working are:
 // * - FirebaseStorage
 // * - Firestore (Cloud Firestore)
-// * - Push notifications
 
-// ! Lectures are not updated with the proper instructions for the new Firebase packages and unable to test parts of the app.
-// ! The app is not fully functional and parts of the code is not working as expected.
-
-//  Todo: Update the code to work with the new Firebase packages as the documentation provides, as well as push notifications.
+// * Push notifications are working for android only.
 //  ------------------------------------------------
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
